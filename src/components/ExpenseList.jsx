@@ -27,13 +27,15 @@ const ExpenseList = ({ expenses, onEdit, onDelete }) => {
               <div className="flex items-center space-x-2">
                 <button
                   onClick={() => onEdit(expense.id)}
-                  className="text-blue-500 hover:text-blue-600"
+                  aria-label={`Edit expense ${expense.id}`}
+                  className="text-blue-500 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 >
                   <FaEdit className="text-xl" />
                 </button>
                 <button
                   onClick={() => onDelete(expense.id)}
-                  className="text-red-500 hover:text-red-600"
+                  aria-label={`Delete expense ${expense.id}`}
+                  className="text-red-500 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-400"
                 >
                   <FaTrashAlt className="text-xl" />
                 </button>
