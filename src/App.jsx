@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import Expenses from './components/ExpenseForm.jsx'; 
-import Budget from './components/BudgetManager'; 
-import Goals from './components/GoalTracker'; 
-import Reports from './components/ReportView'; 
+import Home from './components/Home';
+import Expenses from './pages/Expenses'; 
+import Budget from './pages/Budget'; 
+import Goals from './pages/Goals'; 
+import Reports from './pages/Reports';
 
 const App = () => {
   return (
